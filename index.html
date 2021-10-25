@@ -6,27 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      html {
+        --color-primary: rgb(0, 140, 255);
+      }
+
       div {
         border: 2px solid orange;
       }
     </style>
     <script type="module" src="tooltip.js"></script>
+    <script type="module" src="confirm-link.js"></script>
   </head>
   <body>
     <p>
-      <namng-toolTip text="WEb Component is blah..">Hello</namng-toolTip> are
-      awesome
+      <namng-toolTip class="important" text="WEb Component is blah.."
+        >Hello</namng-toolTip
+      >
+      are awesome
     </p>
-    <p>
-      <namng-toolTip>Second test</namng-toolTip>
-    </p>
-    <details>
-      <summary>Robots</summary>
-      <details-menu role="menu">
-        <button type="button" role="menuitem">Hubot</button>
-        <button type="button" role="menuitem">Bender</button>
-        <button type="button" role="menuitem">BB-8</button>
-      </details-menu>
-    </details>
+
+    <namng-toolTip></namng-toolTip>
+
+    <br />
+    <a href="google.com" is="namng-confirm-link">Google</a>
   </body>
 </html>
